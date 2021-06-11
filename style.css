@@ -1,3 +1,7 @@
+:root {
+    --bottom-border: 0.3px solid rgb(226 226 226);
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -68,7 +72,7 @@ a:hover {
 }
 
 .header {
-    border-bottom: 0.3px solid rgb(226 226 226);
+    border-bottom: var(--bottom-border)
     height: 38px;
     padding: 5px 15px;
     position: fixed;
@@ -116,7 +120,7 @@ a:hover {
 
 .header-btn:hover {
     cursor: pointer;
-    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    font-family: helvetica,arial,sans-serif;
     
     transition: ease 0.6s;
     transition-property: all;
@@ -128,4 +132,28 @@ a:hover {
 
 .article-wrapper {
     padding: 40px;
+}
+
+.article-title {
+    /* background-color: darkgrey; */
+    height: 96px;
+    margin-top: 60px;
+
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 35px;
+    width: 600px;
+    margin-left: 200px;
+    margin-right: 249px;
+    padding-bottom: 25px;
+    border-bottom: var(--bottom-border);
+}
+
+.icons-wrapper {
+    margin-left: 200px;
+    max-width: 600px;
 }
