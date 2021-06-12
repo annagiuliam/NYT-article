@@ -68,18 +68,19 @@ a:hover {
 
 .page-wrapper {
     height: 100%;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
 
 .header {
-    border-bottom: var(--bottom-border)
+    border-bottom: var(--bottom-border);
     height: 38px;
     padding: 5px 15px;
     position: fixed;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    background-color: white;
     
 }
 
@@ -120,8 +121,7 @@ a:hover {
 
 .header-btn:hover {
     cursor: pointer;
-    font-family: helvetica,arial,sans-serif;
-    
+    font-family: helvetica,arial,sans-serif;    
     transition: ease 0.6s;
     transition-property: all;
     transition-duration: 0.6s;
@@ -132,28 +132,69 @@ a:hover {
 
 .article-wrapper {
     padding: 40px;
+    
 }
 
 .article-title {
-    /* background-color: darkgrey; */
     height: 96px;
+    max-width: 500px; 
     margin-top: 60px;
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: 800;
-    font-size: 35px;
-    width: 600px;
-    margin-left: 200px;
-    margin-right: 249px;
+    font-size: 30px;
     padding-bottom: 25px;
     border-bottom: var(--bottom-border);
 }
 
 .icons-wrapper {
-    margin-left: 200px;
-    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.icons-wrapper ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 auto; 
+    max-width: 500px;
+}
+
+.icons-wrapper li {
+    height: 22px;
+    width: 22px;
+    padding: 3px;
+    margin-right: 16px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    
+}
+
+.icons-wrapper li:hover {
+    background-color: white;
+    cursor: pointer;
+}
+.icons-wrapper .white-bg {
+    background-color: white;
+    border: 1px solid white;
+}
+.icons-wrapper img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.pic-wrapper {
+    max-width: 945px;
+    margin: 0 auto;
+}
+
+.main-pic {
+    max-width: 100%;
+    height: auto;
 }
