@@ -189,7 +189,7 @@ h1 {
     margin: 0 auto;
 }
 
-.pic-wrapper {
+.main-pic-wrapper {
     max-width: 945px;
     margin: 0 auto;
 }
@@ -197,4 +197,24 @@ h1 {
 .main-pic {
     max-width: 100%;
     height: auto;
+}
+
+.main-pic-wrapper figcaption {
+    max-width: 900px;
+    margin-right: 220px;
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.figcaption-default {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin-right: 5px;
+    letter-spacing: 0;
+}
+
+.figcaption-small {
+    font-size: 11px;
+    color: #888;
 }
