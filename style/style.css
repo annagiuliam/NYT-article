@@ -2,50 +2,6 @@
     --bottom-border: 0.3px solid rgb(226 226 226);
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 *,
 *:before,
 *:after {
@@ -76,9 +32,10 @@ p a:hover {
     cursor: pointer;
 }
 
-h2 {
+.h2 {
     font-weight: bold;
     margin-bottom: 15px;
+    font-size: 20px;
 }
 
 .page-wrapper {
@@ -88,7 +45,7 @@ h2 {
 
 .header {
     border-bottom: var(--bottom-border);
-    height: 38px;
+    height: 42px;
     padding: 5px 15px;
     position: fixed;
     width: 100%;
@@ -105,14 +62,14 @@ h2 {
 
 .header span {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 14.75px;
+    font-weight: bold;
     line-height: 0.7px;
 }
 
 .header img {
-    height: 25px;
-    width: 125px;
+    height: auto;
+    width: 195px;
 }
 
 .header-right {
@@ -123,12 +80,12 @@ h2 {
 }
 .header-btn {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 700;    
     line-height: 11px;
     word-spacing: 0px;
     margin-right: 10px;
-    padding: 7px;
+    padding: 10px 12px;
     color: white;
     background-color: #567b95;
     border-radius: 3px;
@@ -152,11 +109,11 @@ h2 {
 
 .article-title {
     height: 96px;
-    max-width: 500px; 
+    max-width: 600px; 
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     
 }
 
@@ -164,10 +121,10 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 40px;
     padding-bottom: 25px;
     border-bottom: var(--bottom-border);
-    /* padding-right: 80px; */
+    
 }
 
 .icons-wrapper {
@@ -179,17 +136,17 @@ h1 {
     flex-direction: row;
     justify-content: flex-start;
      margin: 0 auto; 
-    max-width: 500px; 
+    max-width: 600px; 
 }
 
 .icons-wrapper li {
-    height: 22px;
-    width: 22px;
-    padding: 3px;
+    height: 27px;
+    width: 27px;
+    padding: 5px;
     margin-right: 16px;
     background-color: #eee;
     border-radius: 50%;
-    border: 1px solid #eee;
+    border: 1.5px solid #eee;
     
 }
 
@@ -198,6 +155,8 @@ h1 {
     cursor: pointer;
 }
 .icons-wrapper .white-bg {
+    height: 30px;
+    width: 30px;
     background-color: white;
     border: 1px solid white;
 }
@@ -207,7 +166,7 @@ h1 {
 }
 
 .main-pic-wrapper {
-    max-width: 945px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -218,13 +177,14 @@ h1 {
 
 .main-pic-wrapper figcaption {
     max-width: 900px;
-    margin-right: 220px;
+    /* margin-right: 220px; */
     margin-top: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 20px;
 }
 
 .figcaption-default {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     color: #666;
     margin-right: 5px;
@@ -232,8 +192,9 @@ h1 {
 }
 
 .figcaption-small {
-    font-size: 11px;
+    font-size: 14px;
     color: #888;
+    line-height: 18px;
 }
 
 .article-body-wrapper {
@@ -256,7 +217,7 @@ h1 {
 }
 
 .author {
-    font-size: 11px;
+    font-size: 15px;
     font-weight: 700;
     padding-bottom: 15px;
 }
@@ -273,21 +234,21 @@ h1 {
 }
 
 .date {
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .article-body {
     margin-top: 15px;
-    max-width: 450px;
+    max-width: 600px;
 }
 
 .article-body p {
     margin-bottom: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 17px;
+    font-size: 20px;
     font-stretch: 100%;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 30px;
 }
 
 .sign-up {
@@ -304,22 +265,21 @@ h1 {
 
 .sign-up .bold, .sign-up-btn {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 800;
 }
 
 .sign-up .italic {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 14px;
+    font-size: 17px;
     font-style: italic;
 }
 
 .sign-up-btn {
     border: 1px solid black;
-    height: 25px;
+    height: auto;
     line-height: 25px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 6px 12px;
     text-align: center;
     vertical-align: middle;
     border-radius: 3px;
@@ -333,7 +293,9 @@ h1 {
 }
 
 .sign-up-text {
-   max-width: 380px;
+   max-width: 500px;
+   margin-right: 20px;
+   line-height:24px;
 }
 
 aside {
@@ -341,14 +303,14 @@ aside {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 160px;
+    width: 210px;
     margin-left: 30px;
 }
 
 .aside-title {
     font-weight: bolder;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 11px;
+    font-size: 14px;
     padding-bottom: 10px;
     margin: 15px;
     border-bottom: var(--bottom-border);
@@ -356,8 +318,8 @@ aside {
 }
 
 aside img {
-    width: 55px;
-    height: 55px;
+    width: 75px;
+    height: 75px;
     margin-right: 10px;
 }
 
@@ -366,11 +328,89 @@ aside article {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 1.5;
     margin-bottom: 15px;
 }
 
 aside article:hover {
     cursor: pointer;
+}
+
+.inflation-wrapper {
+    margin: 20px auto;
+    max-width: 945px;
+    
+}
+
+.inflation-sub-header {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+    color: #666 ;
+    font-weight: 400;
+}
+
+.inflation-content {
+    position: relative;
+}
+
+.inflation-content img {
+    width: 100%;
+    height: auto;
+    
+}
+
+
+.tile {
+    width: 228px;
+    position: absolute;
+    line-height: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.55px;  
+}
+
+.tile-title {      
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.tile-1 {
+    top: 25%;
+}
+
+.tile-2 {
+    top: 25%;
+    left: 25%
+}
+
+.tile-3 {
+    top: 25%;
+    left: 50%;
+}
+
+.tile-4 {
+    top: 25%;
+    left: 76%;
+}
+
+.tile-5 {
+    top: 75%;
+    left: 0;
+}
+
+.tile-6 {
+    top: 75%;
+    left: 25%;
+}
+
+.tile-7 {
+    top: 75%;
+    left: 50%;
+}
+
+.tile-8 {
+    top: 75%;
+    left: 75%;
 }
