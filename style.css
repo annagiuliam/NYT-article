@@ -66,6 +66,21 @@ a:hover {
     text-decoration: underline;
 }
 
+p a {
+    color: #326891;
+    text-decoration: underline solid  #326891 1px;
+}
+
+p a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
 .page-wrapper {
     height: 100%;
     /* background-color: aliceblue; */
@@ -132,7 +147,7 @@ a:hover {
 
 .article-wrapper {
     padding: 40px;
-    
+
 }
 
 .article-title {
@@ -142,6 +157,7 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+    
 }
 
 h1 {
@@ -151,6 +167,7 @@ h1 {
     font-size: 30px;
     padding-bottom: 25px;
     border-bottom: var(--bottom-border);
+    /* padding-right: 80px; */
 }
 
 .icons-wrapper {
@@ -161,8 +178,8 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 0 auto; 
-    max-width: 500px;
+     margin: 0 auto; 
+    max-width: 500px; 
 }
 
 .icons-wrapper li {
@@ -217,4 +234,104 @@ h1 {
 .figcaption-small {
     font-size: 11px;
     color: #888;
+}
+
+.article-body-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-left: 33%;
+    /* padding-right: 10%; */
+    /* justify-content: space-between; */
+    margin-top: 30px;
+}
+
+.article-main {
+    max-width: 600px;
+    margin-right: 40px
+   
+}
+
+.article-top {
+    font-family: Helvetica, sans-serif;
+}
+
+.author {
+    font-size: 11px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.author-name a {
+    margin-left: 5px;
+    text-decoration: underline;
+    text-decoration-color: #ccc;
+}
+
+.author-name a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.date {
+    font-size: 10px;
+}
+
+.article-body {
+    margin-top: 15px;
+    max-width: 450px;
+}
+
+.article-body p {
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-stretch: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.sign-up {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: var(--bottom-border);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;;
+
+}
+
+.sign-up .bold, .sign-up-btn {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.sign-up .italic {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.sign-up-btn {
+    border: 1px solid black;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+.sign-up-btn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.4s ease 0s, color 0.4s ease 0s;
+    cursor: pointer;
+}
+
+.sign-up-text {
+   max-width: 380px;
 }
