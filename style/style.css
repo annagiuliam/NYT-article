@@ -32,10 +32,14 @@ p a:hover {
     cursor: pointer;
 }
 
-.h2 {
+h2 {
     font-weight: bold;
     margin-bottom: 15px;
     font-size: 20px;
+}
+
+figcaption {
+    margin-top: 10px;
 }
 
 .page-wrapper {
@@ -413,4 +417,33 @@ aside article:hover {
 .tile-8 {
     top: 75%;
     left: 75%;
+}
+
+.inflation-divisor {
+    height: 1px;
+    width: 70px;
+    background-color: black;
+    margin-bottom: 15px;
+}
+
+.inflation-credit {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px
+}
+
+.video-wrapper {
+    width: 600px;
+    margin: 20px auto;
+}
+
+
+.figure-telescope {
+    max-width: 720px;
+    margin: 15px auto;
+}
+
+.figure-telescope img {
+    width: 100%;
+    height: auto;
 }
