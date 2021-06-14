@@ -82,7 +82,7 @@ figcaption {
     justify-content: flex-start;
     align-items: center;
 }
-.header-btn {
+.header-btn, .bottom-btn {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     font-weight: 700;    
@@ -95,7 +95,7 @@ figcaption {
     border-radius: 3px;
 }
 
-.header-btn:hover {
+.header-btn:hover, .bottom-btn:hover {
     cursor: pointer;
     font-family: helvetica,arial,sans-serif;    
     transition: ease 0.6s;
@@ -131,9 +131,6 @@ h1 {
     
 }
 
-.icons-wrapper {
-    margin-bottom: 30px;
-}
 
 .icons-wrapper ul {
     display: flex;
@@ -171,7 +168,10 @@ h1 {
 
 .main-pic-wrapper {
     max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-pic {
@@ -181,7 +181,6 @@ h1 {
 
 .main-pic-wrapper figcaption {
     max-width: 900px;
-    /* margin-right: 220px; */
     margin-top: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 20px;
@@ -204,9 +203,7 @@ h1 {
 .article-body-wrapper {
     display: flex;
     flex-direction: row;
-    padding-left: 33%;
-    /* padding-right: 10%; */
-    /* justify-content: space-between; */
+    padding-left: 33.5%;
     margin-top: 30px;
 }
 
@@ -446,4 +443,35 @@ aside article:hover {
 .figure-telescope img {
     width: 100%;
     height: auto;
+}
+
+.article-bottom, .article-bottom a {
+    width: 600px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    font-family: Helvetica, Arial, sans-serif;
+    color:  rgb(102, 102, 102);
+}
+
+.article-bottom a {
+    text-decoration: underline;
+}
+
+.article-bottom a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bottom-buttons-wrapper {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-btn {
+    width: 315px;
+    text-align: center;
+    margin-right: 25px;
 }
