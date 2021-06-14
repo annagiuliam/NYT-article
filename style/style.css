@@ -475,3 +475,18 @@ aside article:hover {
     text-align: center;
     margin-right: 25px;
 }
+
+.bottom-nav {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.nav-top-divider {
+    width: 100%;
+    /* background-color: #fff; */
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 2px solid #e2e2e2;
+    height: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
