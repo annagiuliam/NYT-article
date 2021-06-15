@@ -558,3 +558,9 @@ aside article:hover {
     padding: 10px 0px 0px;
     border-top: var(--bottom-border)
 }
+
+.bottom-footer {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    color: #666;
+}
