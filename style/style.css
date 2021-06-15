@@ -491,3 +491,70 @@ aside article:hover {
     margin-top: 30px;
     margin-bottom: 10px;
 }
+
+.site-index-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    font-family: helvetica, arial, sans-serif;
+    display: flex;
+}
+
+.index-title {
+    font-size: 13px;
+    font-weight: 700;
+    font-family: helvetica, arial, sans-serif;
+    height: 25px;
+    line-height: 15px;
+    margin: 0px;
+    width: 150px;
+}
+
+.index-ul a {
+    display: inline-block;
+    width: 150px;
+    font-size: 13px;
+    font-weight: 500;
+    height: 23px;
+    line-height: 16px;
+    text-align: left;
+}
+
+.index-section {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.index-right {
+    padding-left: 15px;
+    border-left: var(--bottom-border)
+}
+
+.subscribe-list {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.subscribe-list a {
+    display: inline-block;
+    height: 25px;
+}
+
+.subscribe-list img {
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    margin-right: 7px;
+}
+
+.corporate-list a, .alternate-list a {
+    height: 20px;
+    font-size: 11px;
+    display: inline-block;
+}
+
+.alternate-list {
+    margin: 2px 0px 0px;
+    padding: 10px 0px 0px;
+    border-top: var(--bottom-border)
+}
