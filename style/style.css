@@ -44,7 +44,6 @@ figcaption {
 
 .page-wrapper {
     height: 100%;
-    /* background-color: aliceblue; */
 }
 
 .header {
@@ -560,7 +559,26 @@ aside article:hover {
 }
 
 .bottom-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    border-top: var(--bottom-border)
+}
+
+.bottom-footer ul, .bottom-footer ul>li {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 11px;
     color: #666;
+    display: inline-block;
+
+}
+
+
+.bottom-footer a {
+    color: #666;
+    padding: 0 5px;
+    text-decoration-color: #666;
 }
